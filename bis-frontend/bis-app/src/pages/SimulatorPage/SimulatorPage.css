@@ -1,0 +1,48 @@
+/* 기존 스타일 유지 */
+.simulator-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.full-map {
+    position: absolute;
+    top: 60px; /* Header 높이와 일치 */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px); /* Header 제외한 높이 */
+    z-index: 1;
+}
+
+.simulator-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.route-details-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px; /* 좌측 하단 */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 3; /* 다른 요소 위에 표시 */
+}
+
+.route-details-button:hover {
+    background-color: #0056b3;
+}
